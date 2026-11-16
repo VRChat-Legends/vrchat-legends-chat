@@ -1,0 +1,7 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Core window permissions. The chat itself loads from vrchatlegends.com and uses no app IPC; updates and dialogs are handled in Rust.",
+  "windows": ["main"],
+  "permissions": ["core:default"]
+}

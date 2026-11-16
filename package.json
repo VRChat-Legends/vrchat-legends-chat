@@ -1,0 +1,14 @@
+{
+  "name": "vrcl-chat",
+  "private": true,
+  "version": "0.1.0",
+  "description": "VRChat Legends Chat: the site's Messages in its own window, for Windows and Linux. Rust + Tauri 2.",
+  "scripts": {
+    "dev": "tauri dev",
+    "build": "tauri build",
+    "icons": "tauri icon app-icon.png"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.9.0"
+  }
+}

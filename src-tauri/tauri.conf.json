@@ -1,0 +1,49 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "VRChat Legends Chat",
+  "mainBinaryName": "vrcl-chat",
+  "version": "0.1.0",
+  "identifier": "com.vrchatlegends.chat",
+  "build": {
+    "frontendDist": "../shell"
+  },
+  "app": {
+    "windows": [],
+    "security": {
+      "csp": null
+    }
+  },
+  "plugins": {
+    "updater": {
+      "endpoints": [
+        "https://github.com/VRChat-Legends/vrchat-legends-chat/releases/latest/download/latest.json"
+      ],
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEJGQkQ2QUJCMjM3RjZGQjMKUldTemIzOGp1MnE5djdscE5SMUorZVI0dU5VazZmZXB6MVJRUTE2aWlKaHFmRVBld0dKSnRTb0YK"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "createUpdaterArtifacts": true,
+    "targets": ["nsis", "deb", "rpm", "appimage"],
+    "publisher": "VRChat Legends",
+    "homepage": "https://vrchatlegends.com",
+    "category": "SocialNetworking",
+    "shortDescription": "Chat with your VRChat Legends friends",
+    "longDescription": "VRChat Legends Messages in its own window: friends, groups, voice calls and bots. Sign in with your VRChat Legends account.",
+    "copyright": "Copyright VRChat Legends. All rights reserved.",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "webviewInstallMode": { "type": "downloadBootstrapper" },
+      "nsis": { "installMode": "currentUser" }
+    },
+    "linux": {
+      "deb": { "section": "net" }
+    }
+  }
+}

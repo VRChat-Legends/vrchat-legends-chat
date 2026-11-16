@@ -16,6 +16,8 @@ tauri-plugin-window-state = "2"
 tauri-plugin-updater = "2"
 tauri-plugin-dialog = "2"
 open = "5"
+# tauri::generate_context! expands to code that uses serde_json, so it must be a direct dependency
+serde_json = "1"
 
 [profile.release]
 codegen-units = 1
